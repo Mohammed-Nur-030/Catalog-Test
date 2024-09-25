@@ -5,38 +5,6 @@ function convertBaseToInt(value, base) {
     return parseInt(value, base);
 }
 
-// Function to generate the polynomial string
-function generatePolynomialString(coefficients) {
-    let polynomial = '';
-    const degree = coefficients.length - 1;
-
-    for (let i = 0; i <= degree; i++) {
-        const coef = coefficients[i];
-        const power = degree - i;
-
-        if (coef !== 0) {
-            if (polynomial.length > 0 && coef > 0) {
-                polynomial += ' + ';
-            } else if (coef < 0) {
-                polynomial += ' - ';
-            }
-
-            const absCoef = Math.abs(coef);
-            if (absCoef !== 1 || power === 0) {
-                polynomial += absCoef;
-            }
-
-            if (power > 0) {
-                polynomial += 'x';
-                if (power > 1) {
-                    polynomial += '^' + power;
-                }
-            }
-        }
-    }
-
-    return polynomial;
-}
 
 // Read the JSON input from the file
 const input = JSON.parse(fs.readFileSync('testcase.json', 'utf-8'));
