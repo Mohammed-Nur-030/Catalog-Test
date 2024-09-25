@@ -112,9 +112,9 @@ console.log(`Constant term (c) = ${constantTerm}`);
 points.forEach(point => {
     const { x, y } = point;
     const yCalc = polynomial.evaluate(x);
-    console.log(`f(${x}) = ${yCalc} (expected ${y})`);
+    // console.log(`f(${x}) = ${yCalc} (expected ${y})`);
 });
 
 // Test interpolation at an arbitrary point
 const testX = 4; // Change this value for different test points
-console.log(`f(${testX}) = ${polynomial.evaluate(testX)}`);
+// console.log(`f(${testX}) = ${polynomial.evaluate(testX)}`);
