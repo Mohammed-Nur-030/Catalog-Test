@@ -5,7 +5,7 @@ This project implements a simplified version of Shamir's Secret Sharing algorith
 ## Getting Started
 
 ### Prerequisites
-- Node.js (version X.X.X)
+- Node.js v21.6.0.
 
 ### Installation
 1. Clone the repository
